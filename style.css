@@ -1,0 +1,208 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "GlacialIndifference",Arial, sans-serif;
+}
+html {
+    background-color: black;
+}
+@font-face {
+    font-family: "GlacialIndifference";
+    src: url("font/glacialindifference-regular-webfont.woff") format(woff)
+         url("font/glacialindifference-regular-webfont.woff2") format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes fadeBounce {
+    0% {
+      opacity: 0;
+      transform: translateY(-200%);
+    }
+  
+    40% {
+      transform: translateY(0);
+    }
+  
+    55% {
+      transform: translateY(-6px);
+    }
+  
+    70% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    85% {
+      transform: translateY(-3px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+@-webkit-keyframes fadeBounce {
+    0% {
+      opacity: 0;
+      transform: translateY(-200%);
+    }
+  
+    40% {
+      transform: translateY(0);
+    }
+  
+    55% {
+      transform: translateY(-6px);
+    }
+  
+    70% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    85% {
+      transform: translateY(-3px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section header {
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: flex;  
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left:20px;
+}
+section header ul li a {
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+    padding-right: 20px;
+}
+section header ul li button {}
+
+section .main {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section .main .logo {
+    opacity: 0;
+    -webkit-animation: fadeBounce 2.2s forwards;
+    animation: fadeBounce 2.2s forwards;
+   
+}
+section form {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .main .searchBox {
+    opacity: 0;
+    -webkit-animation: fadeBounce 2.2s forwards;
+    animation: fadeBounce 2.2s forwards;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+section .main .searchBox .icons .iconSearch {
+    transition: all 1s;
+}
+
+section .main .searchBox:hover .icons .iconSearch {
+    transform: rotate(360deg);
+}
+section .main .searchBox .search {
+    background-color: #fff;
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline:none;
+    font-size: 16px;
+}
+section .main .searchBox .icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+section .main .buttons {
+    margin-top: 20px;
+}
+section .main .buttons button {
+    
+    margin: 0 5px;
+    padding: 12px 20px;
+    color:#fff;;
+    background-color: #1ec4bb;
+    font-size: 14px;
+    border:none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline:none; 
+}
+
+section .main .buttons button:hover {
+    border:1px solid #ccc;
+    color:#1ec4bb;;
+    background-color: #fff;
+}
+
+section.wrapper
+{
+    height: 100vh;
+    padding: 0;
+}
+
+.arama {
+    transition: all 1s;
+}
+.arama:hover {
+    transform: scale(1.1);
+}
+.lucky {
+    transition: all 1s;
+}
+.lucky:hover {
+    transform: scale(1.1);
+}
